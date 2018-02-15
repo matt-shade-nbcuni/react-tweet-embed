@@ -56,7 +56,7 @@ class TweetEmbed extends React.Component {
 
   render () {
     return (
-      <div
+      <span
         className={this.props.className}
         ref={c => {
           this._div = c
