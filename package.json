@@ -1,30 +1,28 @@
 {
-  "name": "react-tweet-embed",
-  "version": "1.1.0",
-  "description":
-    "react component that you supply tweet id and you'll get a tweet embed back, nothing more",
+  "name": "react-tweet-embed-in-span",
+  "version": "1.0.1",
+  "description": "react component that you supply tweet id and you'll get a tweet embed back, nothing more",
   "main": "dist/tweet-embed.js",
   "module": "dist/tweet-embed.es.js",
   "scripts": {
     "test": "BABEL_ENV=cjs ava",
     "testu": "BABEL_ENV=cjs ava -u",
     "pretest": "standard",
-    "build":
-      "BABEL_ENV=cjs babel tweet-embed.js --out-dir dist && BABEL_ENV=es babel tweet-embed.js --out-file dist/tweet-embed.es.js",
+    "build": "BABEL_ENV=cjs babel tweet-embed.js --out-dir dist && BABEL_ENV=es babel tweet-embed.js --out-file dist/tweet-embed.es.js",
     "build-es": "BABEL_ENV=es babel tweet-embed.js --out-dir dist",
     "clean": "rimraf dist",
-    "prepublish": "npm test && npm run clean && npm run build"
+    "prepare": "npm test && npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capaj/react-tweet-embed.git"
+    "url": "git+https://github.com/matt-shade-nbcuni/react-tweet-embed-in-span.git"
   },
-  "author": "capajj@gmail.com",
+  "author": "hellomattshade@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/capaj/react-tweet-embed/issues"
+    "url": "https://github.com/matt-shade-nbcuni/react-tweet-embed-in-span/issues"
   },
-  "homepage": "https://github.com/capaj/react-tweet-embed#readme",
+  "homepage": "https://github.com/matt-shade-nbcuni/react-tweet-embed-in-span",
   "peerDependencies": {
     "react": ">0.14.0"
   },
@@ -42,13 +40,21 @@
     "rimraf": "^2.6.2",
     "standard": "^10.0.3"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "ava": {
-    "files": ["*.spec.js"],
+    "files": [
+      "*.spec.js"
+    ],
     "babel": "inherit",
-    "require": ["babel-register"]
+    "require": [
+      "babel-register"
+    ]
   },
   "standard": {
-    "ignore": ["dist/"]
+    "ignore": [
+      "dist/"
+    ]
   }
 }

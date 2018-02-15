@@ -1,14 +1,17 @@
-# react-tweet-embed
+# react-tweet-embed-in-span
+
+# forked from
+https://www.npmjs.com/package/react-tweet-embed
 
 ## Install
 ```
-npm i react-tweet-embed
+npm i react-tweet-embed-in-span
 ```
 
 ## Quickstart
 
 ```javascript
-import TweetEmbed from 'react-tweet-embed'
+import TweetEmbed from 'react-tweet-embed-in-span'
 
 <TweetEmbed id='692527862369357824' />
 ```
